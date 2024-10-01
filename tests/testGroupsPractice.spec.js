@@ -6,9 +6,6 @@ test.describe("@smoke Test Group1", () => {
     await page.goto("https://practice.cydeo.com/");
   });
 
-  test.afterEach(async ({ page }) => {
-    await page.waitForTimeout(3000);
-  });
 
   test("@lib01 Getting the title of the page", async ({ page }) => {
     //Log URL
